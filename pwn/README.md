@@ -15,7 +15,7 @@
 	- `vuln()`：詢問`Enter some data: `、接收 input 以及印出`Your data was read. ...`等訊息。
 	- `win()`：印出flag.txt
 	- `main()` ![pic](pic/main.png)
-	- `vuln()` ![pic](vuln.png)
+	- `vuln()` ![pic](pic/vuln.png)
 	- `win()` ![pic](pic/win.png) ![pic](pic/win_asm.png)
 
 ## 思路：
