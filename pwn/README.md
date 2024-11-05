@@ -1,6 +1,7 @@
 # pwn - Reader Writeup
-![[reader.png]]  
+
 ---  
+![pic](pic/reader.png)
 
 ## FLAG：
 `CYBORG{u_hulk_sm4sh3d_th4t_c4n4ry_l1k3_a_ch4mp!!!`
@@ -13,9 +14,9 @@
 	- child：執行`vuln()`
 	- `vuln()`：詢問`Enter some data: `、接收 input 以及印出`Your data was read. ...`等訊息。
 	- `win()`：印出flag.txt
-	- `main()` ![[main.png]]
-	- `vuln()` ![[vuln.png]]
-	- `win()` ![[win.png]] ![[win_asm.png]]
+	- `main()` ![pic](pic/main.png)
+	- `vuln()` ![pic](vuln.png)
+	- `win()` ![pic](pic/win.png) ![pic](pic/win_asm.png)
 
 ## 思路：
 - `vuln()`輸入字串的地方有bof漏洞，且有個`win()`作為跳轉目標，可以用 **ret2win** 解題。
@@ -65,4 +66,4 @@ r.send(payload)
 r.interactive()
 ```
 
-![[flag.png]]
+![pic](pic/flag.png)
